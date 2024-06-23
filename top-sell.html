@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget-Galaxy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body onload="loadtoprate('topsell')">
+    <header class="flex justify-around h-24 bg-slate-900 text-gray-100">
+        <div class="flex">
+            <img src="./img/logo.jfif" alt="" class="w-20 h-20 mt-2 rounded-full">
+            <p class=" text-2xl m-5 w-full">Gadget Galaxy</p>
+        </div>
+        <div>
+            <ion-icon class="w-10 h-6 mt-7 md:hidden xl:hidden sm:block cursor-pointer float-right" id='menu'
+                name="menu-outline" onclick="show()"></ion-icon>
+            <nav class="text-white hidden text-md  md:block">
+                <ul
+                    class="flex flex-col gap-2 sm:flex-row gap-9 m-8 lg:flex-row gap-9 m-8 md:flex-row gap-9 m-8 bg-white bg-opacity-20 backdrop-blur-lg rounded-lg border border-white border-opacity-30 sm:bg-opacity-0 sm:backdrop-blur-0 sm:border-0 md:bg-opacity-0 md:backdrop-blur-0 md:border-0 lg:bg-opacity-0 lg:backdrop-blur-0 lg:border-0 p-4">
+                    <li class="hover:underline"><a href="./index.html">Home</a></li>
+                    <li class="hover:underline"><a href="./top-sell.html">Top Selling</a></li>
+                    <li class="hover:underline"><a href="./top-rate.html">Top Rated</a></li>
+                    <li class="hover:underline"><a href="./new-arrive.html">Newly Arrived</a></li>
+                    <li class="hover:underline"><a href="./customer.html">Customer Review</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <h1 class="text-2xl p-5 text-center bg-gray-400">Top Selling Products</h1>
+
+    <section id="content">
+
+        
+    </section>
+
+    <footer class="bg-slate-800 text-white">
+        <h1 class="py-4 text-2xl text-center">Useful Links</h1>
+        <div class="flex flex-row  justify-around items-center">
+            <div class=>
+                <img src="./img/logo.jfif" alt="" class="w-20 rounded-full">
+                <p>Gadget-Galaxy</p>
+            </div>
+            <div>
+                <ul class="flex flex-col m-2">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./top-sell.html">Top Selling</a></li>
+                    <li><a href="./top-rate.html">Top Rated</a></li>
+                    <li><a href="./new-arrive.html">Newly Arrived</a></li>
+                    <li><a href="./customer.html">Customer Review</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-4 mt-20">
+                <ion-icon class="bg-black-900" name="logo-facebook"></ion-icon>
+                <ion-icon class="bg-black-900" name="logo-instagram"></ion-icon>
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-icon class="bg-black-900" name="logo-linkedin"></ion-icon>
+            </div>
+        </div>
+
+        <p class="w-full h-19 bg-slate-600 text-center text-xl p-3 text-white">&copyAll right are reserved by Gadget
+            Galaxy</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
